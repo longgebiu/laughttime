@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+<text>某位不愿透露姓名的唐马儒先生</text>
+<image src="../../images/me.png"></image>
+<text>扫描二维码支持我把！</text>
+ <image src="../../images/pay.png" style="display:block;width:200px;height:200px"></image>
+</view>
+<view class="pay-img">
+ 
+</view>

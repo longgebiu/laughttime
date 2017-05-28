@@ -1,0 +1,71 @@
+/**index.wxss**/
+.swiper_imgfather {
+    height:200px;
+}
+
+.all-main {
+  margin-top: 10%;
+}
+
+.slide-image {
+    width: 100%;
+    height:200px;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  vertical-align: top
+}
+
+.usermotto {
+  margin-top: 0rpx;
+}
+.flex-img {
+  float: left
+}
+.root {
+  margin-top: 20rpx;
+  text-align: center;
+  border-top: 1px solid #aaa
+}
+.title{
+  display: block;
+  margin-top: 10rpx;
+}
+.pl-textarea {
+  display: block;
+  margin-top: 10rpx;
+  text-align: center;
+}
+
+.list {
+  margin-top: 40rpx;
+  text-align: left;
+}
+
+.pression {
+  margin-top: 20rpx;
+  min-height: 30rpx;
+}
+
+.btn1 {
+  display: blcok;
+  margin-top: 20rpx;
+}
+
+.section__pression {
+  margin-top: 20rpx;
+  color:blue;
+}
+
+.section__answer {
+  display: block;
+  margin-top: 20rpx;
+  color:red;
+}

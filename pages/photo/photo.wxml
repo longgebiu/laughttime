@@ -1,0 +1,29 @@
+  <scroll-view class="bigWrap" scroll-y="true" scroll-top="{{scrollTop}}"   bindscroll="scroll" bindscrolltolower= "scrolltolower" style="position: absolute; left: 0; top:0; bottom: 0; right: 0;">
+ <view class="com-widget-goTop" bindtap="goTop" wx:if="{{floorstatus}}">
+            <view class="icon-gotop">
+                顶部
+            </view>
+      </view>
+<view  bindtap="bindViewTap" class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">工作学习太累，来放松下吧</text>
+</view>
+ <view class="footer icon-gotop">
+  <button type="primary" bindtap="getjson" id="{{jump}}">第{{jump}}页</button>
+  </view>
+<view class="main">
+<view class="container">
+  <view class="title">
+   <view wx:for="{{addressInfo}}" wx:for-index="idx" wx:for-item="itemName" class="item">
+     <label class="num" wx:if="{{condition}}"> {{idx}}</label>
+     <label class="text-main" > {{itemName.title}}</label>
+     <view class="icon">
+       <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{itemName.img}}"></image>
+     </view>
+   </view>
+  </view>
+</view>
+</view>
+</scroll-view>
+   
+

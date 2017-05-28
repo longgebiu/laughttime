@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="all-main">
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="root">
+  <text class="title">好玩的机器人问答</text>
+   <view class="section pl-textarea" >
+ <view class="section">
+  <view class="pression">
+    <input  bindinput="bindKeyInput" placeholder="请输入你的问题..."/>
+    </view>
+     <view class="btn1">
+        <button bindtap="getanswer">提问</button>
+    </view>
+</view>
+</view>
+  </view>
+  <view class="list">
+  <view class="section__pression">你输入的是：{{inputValue}}</view>
+   <view class="section__answer">机器人回答：{{answerValue}}</view>
+</view>
+</view>
